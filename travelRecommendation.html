@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+</head>
+<body>
+
+
+
+  <!-- NAVBAR -->
+  <nav>
+    <div id="logo">
+      <img src="images/Logo.png" alt="TravelBloom Logo" width="40" height="40">
+      <h2 class="name">TravelBloom</h2>
+    </div>
+
+    <div id="links">
+      <a href="#Home">Home</a>
+      <a href="#About">About Us</a>
+      <a href="#Contactus">Contact Us</a>
+    </div>
+
+    <div id="search">
+      <input
+        type="text"
+        id="searchinput"
+        class="searchinput"
+        placeholder="Search for beaches, temples, or cities..."
+      >
+      <button id="searchbtn" class="btn">Search</button>
+      <button id="clearbtn" class="btn">Clear</button>
+
+      <!-- DROPDOWN RESULT BOX -->
+      <div id="dropdown">
+        <div class="dropdown-header">
+          <button id="close-btn">Close ✖</button>
+        </div>
+        <div id="resultContainer"></div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="background-fixed"></div> <!-- stays fixed in place -->
+  <div class="background-overlay"></div>
+
+     <!-- MAIN / HOME SECTION -->
+  <section id="Home" class="MainSection">
+    <div class="Homecontent">
+
+      <!-- LEFT SOCIAL ICONS -->
+      <div class="sociallinks">
+        <div class="verticalline"></div>
+        <div class="links">
+          <a href="#" class="linkslogo"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="linkslogo"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="linkslogo"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="linkslogo"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        
+      </div>
+
+      <!-- MAIN TEXT CONTENT -->
+      <div class="mainhomecontent">
+        <h1 class="homesectionheader">Discover...<br> Beautiful Destinations</h1>
+        <p class="homesectiondescriptoin">
+          Explore amazing beaches, temples, and cities around the world.<br>  
+          Plan your next adventure today with TravelBloom.<br>
+          Explore breathtaking beaches, ancient temples, and vibrant cities from every corner of the globe.<br> Whether you’re dreaming of relaxing on sun-kissed shores, uncovering the secrets of centuries-old shrines,<br> or wandering through bustling urban landscapes,<br> TravelBloom helps you craft the perfect getaway. Discover hidden gems, plan unforgettable experiences,<br> and make your next adventure truly extraordinary with TravelBloom
+        <br>
+        <br>
+        </p>
+        <button class="bookbtn">Book Now</button>
+      </div>
+    </div>
+  </section>
+  <!---About Section-->
+  <section id="About">
+     <section id="About">
+  <h2 class="aboutusheader">About Us</h2>
+
+  <h1 class="aboutusmain">Discover the World with TravelBloom</h1>
+
+  <p class="aboutustxt">
+    TravelBloom is your personalized travel companion. We provide curated recommendations
+    for breathtaking destinations across the globe.<br>
+    Our goal is to help you explore, discover,<br>
+    and enjoy the beauty of our world.
+    Explore breathtaking beaches, ancient temples,<br>
+    and vibrant cities from every corner of the globe.<br>
+    Whether you’re dreaming of relaxing on sun-kissed shores, uncovering the secrets of centuries-old shrines,<br>
+    or wandering through bustling urban landscapes, TravelBloom helps you craft the perfect getaway.<br>
+    Discover hidden gems, plan unforgettable experiences,<br>
+    and make your next adventure truly extraordinary with TravelBloom.
+  </p>
+</section>
+  
+
+  <!--Contact Section-->
+    <section id="Contactus">
+    <h2 class="contactustittle">Contact Us</h2>
+    <div class="formsection">
+      <form>
+        <label for="name" class="labels">Name:</label><br>
+        <input type="text" id="name" class="inputval" placeholder="Enter your name"><br><br>
+
+        <label for="email" class="labels">Email:</label><br>
+        <input type="email" id="email" class="inputval" placeholder="Enter your email"><br><br>
+
+        <label for="message" class="labels">Message:</label><br>
+        <textarea id="message" class="inputval" rows="4" placeholder="Type your message..."></textarea><br><br>
+
+        <button type="submit" class="submitmessagebtn">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+ <!-- SCRIPT FILE -->
+  <script src="travelRecommendation.js"></script>
+  <!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</body>
+</html>
